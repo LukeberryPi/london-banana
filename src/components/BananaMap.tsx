@@ -12,7 +12,7 @@ function insetsFor({ width, height }: Size, reserve: Focus['reserve']) {
   const edge = { top: 40, right: 24, bottom: 24, left: 24 }
   if (width >= 768) return reserve === 'card' ? { ...edge, left: 470 } : edge
   const sheet = reserve === 'card' ? 360 : 470
-  return { ...edge, top: 104, bottom: Math.min(sheet, height * 0.58) }
+  return { ...edge, top: 124, bottom: Math.min(sheet, height * 0.58) }
 }
 
 const toPath = (ring: Point[], close = true) =>
@@ -182,7 +182,7 @@ export function BananaMap({ focus, pin }: { focus: Focus; pin?: Pin }) {
       >
         {size && view && <MapSvg size={size} view={view} pin={pin} />}
       </div>
-      <div className="absolute top-32 right-3 flex flex-col gap-1.5 md:top-auto md:right-5 md:bottom-28">
+      <div className="absolute top-37 right-3 flex flex-col gap-1.5 md:top-auto md:right-5 md:bottom-28">
         <MapButton label="Zoom in" onClick={() => zoomBy(0.5)}>
           <path d="M12 5v14M5 12h14" />
         </MapButton>

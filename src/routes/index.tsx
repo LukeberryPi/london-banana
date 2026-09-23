@@ -260,6 +260,22 @@ function Credits() {
         Map: ONS, OGL v3, contains OS data © Crown copyright. River © OpenStreetMap contributors. Postcodes via
         postcodes.io, contains Royal Mail data © Royal Mail.
       </p>
+      <p className="mt-1">
+        Made by{' '}
+        <a href="https://x.com/lukeberrypi" target="_blank" rel="noopener noreferrer" className="font-semibold text-marker underline">
+          @lukeberrypi
+        </a>
+        .{' '}
+        <a
+          href="https://github.com/LukeberryPi/london-banana"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-marker underline"
+        >
+          Source code on GitHub
+        </a>
+        .
+      </p>
     </footer>
   )
 }
