@@ -15,7 +15,10 @@ export const Route = createRootRoute({
       { name: 'twitter:card', content: 'summary' },
       { name: 'theme-color', content: '#ffe52e' },
     ],
-    links: [{ rel: 'stylesheet', href: appCss }],
+    links: [
+      { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
+      { rel: 'stylesheet', href: appCss },
+    ],
   }),
   shellComponent: RootDocument,
 })
